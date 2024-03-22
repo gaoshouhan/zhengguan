@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+    height: 480px;
+    background-image: url(../images/bk.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+.header {
+    position: relative;
+    width: 1248px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.logo_head {
+    float: left;
+    margin: 26px 0;
+    cursor: pointer;
+}
+
+.logo_head img {
+    max-height: 80px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.hearder_right_box {
+    float: right;
+    position: relative;
+    width: 600px;
+    height: 30px;
+}
+
+.search_box {
+    float: right;
+    width: 154px;
+    height: 18px;
+    margin-top: 21px;
+    margin-right: 150px;
+}
+
+.search_text {
+    float: left;
+    width: 130px;
+    height: 18px;
+    background-color: transparent;
+    border-top: 2px solid #cdcdcd;
+    border-bottom: 2px solid #cdcdcd;
+    border-left: 2px solid #cdcdcd;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    text-indent: 3px;
+}
+
+.search_btn {
+    float: left;
+    width: 20px;
+    height: 21px;
+    background-color: transparent;
+    border: 2px solid #cdcdcd;
+    border-radius: 0 2px 2px 0;
+    /* background-image: url(../images/search_btn.png); */
+}
+
+.lang {
+    position: absolute;
+    right: 0;
+    top: 21px;
+    width: 150px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.lang a {
+    float: left;
+    color: white;
+}
+
+.lang .ch_simp {
+    margin-left: 9px;
+}
+
+.lang .ch_trad {
+    margin-left: 20px;
+}
+
+.lang .en {
+    border: 2px solid #cdcdcd;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.nav1 {
+    width: 1248px;
+    height: 300px;
+    background-color: pink;
+    margin: 0 auto;
+}
+
+.nav2 {
+    width: 100%;
+    height: 210px;
+    background-color: #cae9fb;
+    margin: 0 auto;
+}
+
+.nav3 {
+    width: 1248px;
+    height: 388px;
+    background-color: skyblue;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 100%;
+    height: 218px;
+    background-image: linear-gradient(#4fa4e4, #122d73);
+}
+
+
+
+.footer_box {
+    position: relative;
+    width: 1248px;
+    height: 218px;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+.logo_foot {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    margin-left: -250px;
+}
+
+.logo_foot img {
+    max-height: 80px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+.contact_info{
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    font-size: 16px;
+    text-align: center;
+    /* color: #cdcdcd; */
+    color: white;
+}
+.copyright{
+    
+}
