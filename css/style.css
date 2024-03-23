@@ -9,10 +9,16 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
 }
 
 /* 顶部轮播图 */
 .banner {
+
     width: 100%;
     height: 480px;
     background-image: url(../images/bk.jpg);
@@ -117,22 +123,220 @@ a {
 .nav1 {
     width: 1248px;
     height: 300px;
-    background-color: pink;
+    background-color: burlywood;
     margin: 0 auto;
 }
 
-.nav2 {
+/* 图片链接栏 */
+.pic-nav {
     width: 100%;
     height: 210px;
     background-color: #cae9fb;
     margin: 0 auto;
 }
 
-.nav3 {
+/* 图片链接栏版心 */
+.pic-nav-box {
+    width: 1248px;
+    height: 210px;
+    margin: 0 auto;
+}
+
+/* 图片链接 */
+.pic-nav-box a {
+    float: left;
+    position: relative;
+    width: 25%;
+    height: 210px;
+}
+
+/*********图片*********/
+.pic-nav-img1 {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 260px;
+    height: 160px;
+}
+
+.pic-nav-img2 {
+    position: absolute;
+    left: 16px;
+    top: 25px;
+    width: 260px;
+    height: 160px;
+}
+
+.pic-nav-img3 {
+    position: absolute;
+    right: 16px;
+    top: 25px;
+    width: 260px;
+    height: 160px;
+}
+
+.pic-nav-img4 {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 260px;
+    height: 160px;
+}
+
+/*********图片*********/
+
+/* 图片文字 */
+.pic-nav-box a:nth-child(1) span {
+    position: absolute;
+    top: 69px;
+    left: 42px;
+    width: 60px;
+    height: 60px;
+    background-color: #cae9fb;
+    color: #21368f;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 6px;
+    text-align: center;
+}
+
+.pic-nav-box a:nth-child(2) span {
+    position: absolute;
+    top: 69px;
+    left: 58px;
+    width: 60px;
+    height: 60px;
+    background-color: #cae9fb;
+    color: #21368f;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 6px;
+    text-align: center;
+}
+
+.pic-nav-box a:nth-child(3) span {
+    position: absolute;
+    top: 69px;
+    left: 78px;
+    width: 60px;
+    height: 60px;
+    background-color: #cae9fb;
+    color: #21368f;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 6px;
+    text-align: center;
+}
+
+.pic-nav-box a:nth-child(4) span {
+    position: absolute;
+    top: 69px;
+    left: 94px;
+    width: 60px;
+    height: 60px;
+    background-color: #cae9fb;
+    color: #21368f;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 6px;
+    text-align: center;
+}
+
+
+/* 新闻栏目版心 */
+.news-box {
+
     width: 1248px;
     height: 388px;
-    background-color: skyblue;
     margin: 0 auto;
+}
+
+/* 人才培养 */
+.renCai-box {
+    position: relative;
+    float: left;
+    width: 416px;
+    height: 100%;
+
+}
+.renCai-head{
+   position: absolute;
+   top: 38px;
+   left: 0;
+    width: 390px;
+    height: 50px;
+    border-bottom: 2px solid #888888;
+    z-index: 1;
+}
+.renCai-head a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #888888;
+}
+.renCai-list {
+    position: absolute;
+    right: 0;
+    bottom: 46px;
+    width: 416px;
+    height: 240px;
+    background-color: pink;
+}
+
+.renCai-list li {
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 40px;
+}
+
+.renCai-list li a {
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+    width: 270px;
+    height: 23px;
+    font-size: 16px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.renCai-list li span{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    font-size: 10px;
+    color: #888888;
+
+}
+.renCai-list .dot{
+    position: absolute;
+    left: 3px;
+    bottom: 4px;
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    border:  1px solid #416eb6;
+}
+/* 科研咨询 */
+.keYan-box {
+    float: left;
+    width: 416px;
+    height: 100%;
+    background-color: palegoldenrod;
+}
+
+/* 党团工会 */
+.dangTuan-box {
+    float: left;
+    width: 416px;
+    height: 100%;
+    background-color: pink;
 }
 
 /* 底部背景 */
@@ -159,6 +363,7 @@ a {
     left: 20px;
 
 }
+
 /* 下拉按钮 */
 .dropbtn {
     display: inline-block;
