@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+body {
+    font-family: "微软雅黑";
+}
+
 a {
     text-decoration: none;
 }
 
+/* 顶部轮播图 */
 .banner {
     width: 100%;
     height: 480px;
@@ -16,6 +21,7 @@ a {
     background-position: top center;
 }
 
+/* 顶部版心 */
 .header {
     position: relative;
     width: 1248px;
@@ -23,6 +29,7 @@ a {
     margin: 0 auto;
 }
 
+/* 顶部logo */
 .logo_head {
     float: left;
     margin: 26px 0;
@@ -31,11 +38,12 @@ a {
 
 .logo_head img {
     max-height: 80px;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     height: auto;
 }
 
+/* 顶部右版心 */
 .hearder_right_box {
     float: right;
     position: relative;
@@ -43,6 +51,7 @@ a {
     height: 30px;
 }
 
+/* 搜索框 */
 .search_box {
     float: right;
     width: 154px;
@@ -75,6 +84,7 @@ a {
     /* background-image: url(../images/search_btn.png); */
 }
 
+/* 语言设置 */
 .lang {
     position: absolute;
     right: 0;
@@ -103,6 +113,7 @@ a {
     padding-left: 10px;
 }
 
+/* 第一信息栏版心 */
 .nav1 {
     width: 1248px;
     height: 300px;
@@ -124,22 +135,79 @@ a {
     margin: 0 auto;
 }
 
+/* 底部背景 */
 .footer {
     width: 100%;
     height: 218px;
     background-image: linear-gradient(#4fa4e4, #122d73);
 }
 
-
-
+/* 底部版心 */
 .footer_box {
     position: relative;
     width: 1248px;
     height: 218px;
     margin: 0 auto;
-    background-color: pink;
 }
 
+/* 友情链接 */
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+
+}
+
+.dropbtn {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    color: white; 
+    padding: 0 40px 0 4px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4fa4e4;
+    min-width: 100px;
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    display: block;
+    color: #f9f9f9;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px -4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #4fa4e4;
+}
+
+/* 底部logo */
 .logo_foot {
     position: absolute;
     left: 50%;
@@ -153,17 +221,53 @@ a {
     width: 100%;
     height: auto;
 }
-.contact_info{
+
+/* 联系信息 */
+.contact_info {
     position: absolute;
-    top: 128px;
+    top: 140px;
     left: 50%;
     margin-left: -500px;
     width: 1000px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     /* color: #cdcdcd; */
     color: white;
 }
-.copyright{
-    
+
+/* 版权信息 */
+.copyright {
+    position: absolute;
+    top: 178px;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    font-size: 12px;
+    text-align: center;
+    /* color: #cdcdcd; */
+    color: white;
+}
+
+.copyright a {
+    color: white;
+}
+
+/* 二维码 */
+.QR_code {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 90px;
+    height: 100px;
+    background-color: pink;
+}
+
+.QR_code span {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
 }
