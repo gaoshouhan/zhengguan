@@ -159,7 +159,7 @@ a {
     left: 20px;
 
 }
-
+/* 下拉按钮 */
 .dropbtn {
     display: inline-block;
     width: 130px;
@@ -177,7 +177,7 @@ a {
 .dropdown-content {
     position: absolute;
     background-color: #4fa4e4;
-    min-width: 130px;
+    min-width: 128px;
     opacity: 0;
     /* 初始透明度为0 */
     max-height: 0;
