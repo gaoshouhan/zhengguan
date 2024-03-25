@@ -120,11 +120,81 @@ li {
 }
 
 /* 第一信息栏版心 */
-.nav1 {
+.notic-box {
+    position: relative;
     width: 1248px;
     height: 388px;
-    background-color: burlywood;
+
     margin: 0 auto;
+}
+
+.notic-banner {
+    position: absolute;
+    left: 0;
+    width: 416px;
+    height: 100%;
+    background-color: pink;
+}
+
+.xueyuan-box {
+    position: absolute;
+    left: 431px;
+    width: 416px;
+    height: 100%;
+}
+.xueyuan-box ul{
+    position: absolute;
+    left: 20px;
+
+}
+.xueyuan-box .news-list li a{
+    width: 358px;
+}
+
+.notic-box .xueyuan-box span{
+    position: absolute;
+    top: 16px;
+    left: -20px;
+    width: 28px;
+    height: 23px;
+    padding: 1px 0 2px 0;
+    text-align: center;
+    background-color: #f9e208;
+    color: #000000;
+    font-size: 9px;
+    font-weight:400;
+}
+
+.tongzhi-box {
+    position: absolute;
+    left: 862px;
+    width: 416px;
+    height: 100%;
+
+}
+
+.tongzhi-box ul {
+    position: absolute;
+    left: 20px;
+
+}
+
+.tongzhi-box .news-list li a {
+    width: 358px;
+}
+
+.notic-box .tongzhi-box span {
+    position: absolute;
+    top: 16px;
+    left: -20px;
+    width: 28px;
+    height: 23px;
+    padding: 1px 0 2px 0;
+    text-align: center;
+    background-color: #f9e208;
+    color: #000000;
+    font-size: 9px;
+    font-weight: 400;
 }
 
 /* 图片链接栏 */
@@ -304,7 +374,7 @@ li {
     left: 24px;
     width: 270px;
     height: 23px;
-    font-size: 16px;
+    font-size: 18px;
     color: #000000;
     white-space: nowrap;
     overflow: hidden;
@@ -323,7 +393,7 @@ li {
 .news-list .dot {
     position: absolute;
     left: 3px;
-    bottom: 6px;
+    bottom: 4px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
