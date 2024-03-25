@@ -83,7 +83,7 @@ li {
 .search_btn {
     float: left;
     width: 20px;
-    height: 21px;
+    height: 22px;
     background-color: transparent;
     border: 2px solid #cdcdcd;
     border-radius: 0 2px 2px 0;
@@ -256,45 +256,54 @@ li {
 }
 
 /* 人才培养 */
-.renCai-box {
+.rencai-box {
     position: relative;
     float: left;
     width: 416px;
     height: 100%;
 
 }
-.renCai-head{
+.rencai-head{
    position: absolute;
    top: 38px;
    left: 0;
-    width: 390px;
+    width: 386px;
     height: 50px;
-    border-bottom: 2px solid #888888;
+    border-bottom: 2px solid #bab9b9;
     z-index: 1;
 }
-.renCai-head a{
+.rencai-head h2{
+    position: absolute;
+    left: 40px;
+    bottom: -2px; 
+    border-bottom: 3px solid #426eb7;
+    padding: 2px 0;
+    
+    color: #426eb7;
+}
+.rencai-head a{
     position: absolute;
     right: 0;
-    bottom: 0;
-    color: #888888;
+    bottom: 1px;
+    color: #bab9b9;
 }
-.renCai-list {
+.rencai-list {
     position: absolute;
     right: 0;
     bottom: 46px;
     width: 416px;
     height: 240px;
-    background-color: pink;
+
 }
 
-.renCai-list li {
+.rencai-list li {
     position: relative;
     top: -10px;
     width: 100%;
     height: 40px;
 }
 
-.renCai-list li a {
+.rencai-list li a {
     position: absolute;
     bottom: 0;
     left: 24px;
@@ -306,7 +315,7 @@ li {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.renCai-list li span{
+.rencai-list li span{
     position: absolute;
     right: 30px;
     bottom: 0;
@@ -314,31 +323,182 @@ li {
     color: #888888;
 
 }
-.renCai-list .dot{
+.rencai-list .dot{
     position: absolute;
     left: 3px;
-    bottom: 4px;
+    bottom: 6px;
     width: 10px;
     height:10px;
     border-radius: 50%;
     border:  1px solid #416eb6;
 }
+
 /* 科研咨询 */
-.keYan-box {
+.keyan-box {
+    position: relative;
     float: left;
     width: 416px;
     height: 100%;
-    background-color: palegoldenrod;
+
+}
+.keyan-head {
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    width: 386px;
+    height: 50px;
+    border-bottom: 2px solid #bab9b9;
+    z-index: 1;
+}
+
+.keyan-head h2 {
+    position: absolute;
+    left: 40px;
+    bottom: -2px;
+    border-bottom: 3px solid #426eb7;
+    padding: 2px 0;
+
+    color: #426eb7;
+}
+
+.keyan-head a {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    color: #bab9b9;
+}
+
+.keyan-list {
+    position: absolute;
+    left: 15px;
+    bottom: 46px;
+    width: 386px;
+    height: 240px;
+
+}
+
+.keyan-list li {
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 40px;
+}
+
+.keyan-list li a {
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+    width: 270px;
+    height: 23px;
+    font-size: 16px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.keyan-list li span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    color: #888888;
+
+}
+
+.keyan-list .dot {
+    position: absolute;
+    left: 3px;
+    bottom: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #416eb6;
 }
 
 /* 党团工会 */
-.dangTuan-box {
+.dangtuan-box {
+    position: relative;
     float: left;
     width: 416px;
     height: 100%;
-    background-color: pink;
+
 }
 
+.dangtuan-head {
+    position: absolute;
+    top: 38px;
+    left: 30px;
+    width: 386px;
+    height: 50px;
+    border-bottom: 2px solid #bab9b9;
+    z-index: 1;
+}
+
+.dangtuan-head h2 {
+    position: absolute;
+    left: 40px;
+    bottom: -2px;
+    border-bottom: 3px solid #426eb7;
+    padding: 2px 0;
+
+    color: #426eb7;
+}
+
+.dangtuan-head a {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    color: #bab9b9;
+}
+
+.dangtuan-list {
+    position: absolute;
+    left: 30px;
+    bottom: 46px;
+    width: 386px;
+    height: 240px;
+
+}
+
+.dangtuan-list li {
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 40px;
+}
+
+.dangtuan-list li a {
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+    width: 270px;
+    height: 23px;
+    font-size: 16px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dangtuan-list li span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    color: #888888;
+
+}
+
+.dangtuan-list .dot {
+    position: absolute;
+    left: 3px;
+    bottom: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #416eb6;
+}
 /* 底部背景 */
 .footer {
     width: 100%;
