@@ -1,8 +1,9 @@
 window.addEventListener('load', function () {
+
     var arrow_l = this.document.querySelector('.arrow-l');
     var arrow_r = this.document.querySelector('.arrow-r');
     var focus = this.document.querySelector('.focus');
-
+    var focusWidth = focus.offsetWidth;
     //鼠标经过小轮播图显示左右按钮
     focus.addEventListener('mouseenter', function () {
         arrow_l.style.display = 'block';
@@ -18,7 +19,7 @@ window.addEventListener('load', function () {
             arrow_r.click();
         }, 2000);
     });
-    var focusWidth = focus.offsetWidth;
+
     //动态生成小圆圈
     var ul = focus.querySelector('ul');
     var ol = focus.querySelector('.circle');
@@ -32,7 +33,7 @@ window.addEventListener('load', function () {
             }
             this.className = 'current-pic';
             var index = this.getAttribute('index');
- 
+
             animate(ul, -index * focusWidth);
         });
     }
@@ -67,20 +68,26 @@ window.addEventListener('load', function () {
     var head_arrow_r = this.document.querySelector('.head-arrow-r');
     var head_focus = this.document.querySelector('.head-focus');
     var head_focusWidth = head_focus.offsetWidth;
-    head_focus.addEventListener('mouseenter', function () {
-        head_arrow_l.style.display = 'block';
-        head_arrow_r.style.display = 'block';
-    });
+    var head_num = 0;
+    // head_focus.addEventListener('mouseenter', function () {
+    //     head_arrow_l.style.display = 'block';
+    //     head_arrow_r.style.display = 'block';
+    //     clearInterval(head_timer);
+    //     head_timer = null;
+    // });
 
-    head_focus.addEventListener('mouseleave', function () {
-        head_arrow_l.style.display = 'none';
-        head_arrow_r.style.display = 'none';
-        
-    });
+    // head_focus.addEventListener('mouseleave', function () {
+    //     head_arrow_l.style.display = 'none';
+    //     head_arrow_r.style.display = 'none';
+    //     head_timer = setInterval(function () {
+    //         head_arrow_r.click();
+    //     }, 4000);
+
+    // });
     var head_ul = head_focus.querySelector('ul');
     var head_ol = head_focus.querySelector('.head-circle');
     for (var i = 0; i < head_ul.children.length; i++) {
-        var head_li = this.document.createElement('li');
+        var head_li = document.createElement('li');
         head_li.setAttribute('index', i);
         head_ol.appendChild(head_li);
         head_li.addEventListener('click', function () {
@@ -89,7 +96,8 @@ window.addEventListener('load', function () {
             }
             this.className = 'head-current-pic';
             var head_index = this.getAttribute('index');
-            
+            head_num = head_index;
+            head_circle = head_index;
 
             animate(head_ul, -head_index * head_focusWidth);
         });
@@ -97,11 +105,11 @@ window.addEventListener('load', function () {
     head_ol.children[0].className = 'head-current-pic';
     var head_first = head_ul.children[0].cloneNode(true);
     head_ul.appendChild(head_first);
-    var head_num = 0;
+
     var head_circle = 0;
     head_arrow_r.addEventListener('click', function () {
         head_focusWidth = head_focus.offsetWidth;
-        if (head_num == head_ul.children.length-1) {
+        if (head_num == head_ul.children.length - 1) {
             head_ul.style.left = 0;
             head_num = 0;
         }
@@ -111,7 +119,7 @@ window.addEventListener('load', function () {
         if (head_circle == head_ol.children.length) {
             head_circle = 0;
         }
-        for (var i = 0; i < head_ol.children.length; i++){
+        for (var i = 0; i < head_ol.children.length; i++) {
             head_ol.children[i].className = '';
         }
         head_ol.children[head_circle].className = 'head-current-pic';
@@ -120,15 +128,15 @@ window.addEventListener('load', function () {
     head_arrow_l.addEventListener('click', function () {
         head_focusWidth = head_focus.offsetWidth;
         if (head_num == 0) {
-            head_num = head_ul.children.length-1;
-            head_ul.style.left = -head_num*head_focusWidth+'px';
-            
+            head_num = head_ul.children.length - 1;
+            head_ul.style.left = -head_num * head_focusWidth + 'px';
+
         }
         head_num--;
         animate(head_ul, -head_num * head_focusWidth);
         head_circle--;
-        if (head_circle<0) {
-            head_circle = head_ol.children.length-1;
+        if (head_circle < 0) {
+            head_circle = head_ol.children.length - 1;
         }
         for (var i = 0; i < head_ol.children.length; i++) {
             head_ol.children[i].className = '';
@@ -136,21 +144,35 @@ window.addEventListener('load', function () {
         head_ol.children[head_circle].className = 'head-current-pic';
     });
 
-    var head_timer = this.setInterval(function () {
+    var head_timer = setInterval(function () {
         head_arrow_r.click();
-    }, 3000);
+    }, 4000);
 });
 
 function animate(obj, target, callback) {
     clearInterval(obj.timer);
-    obj.timer = setInterval(function () {
-        var step = (target - obj.offsetLeft) / 10;
-        step = step > 0 ? Math.ceil(step) : Math.floor(step);
-        if (obj.offsetLeft == target) {
+    var duration = 900;
+    var frames = 60;
+    var interval = duration / frames;
+    var initialLeft = obj.offsetLeft;
+    var distance = target - initialLeft;
+    var frameCount = 0;
 
+    obj.timer = setInterval(function () {
+        frameCount++;
+        var progress = frameCount / frames;
+        var easedProgress = easeOutCubic(progress);
+        var currentLeft = initialLeft + distance * easedProgress;
+        obj.style.left = currentLeft + 'px';
+
+        if (frameCount >= frames) {
             clearInterval(obj.timer);
+            obj.style.left = target + 'px';
             callback && callback();
         }
-        obj.style.left = obj.offsetLeft + step + 'px';
-    }, 15);
+    }, interval);
+
+    function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+    }
 }

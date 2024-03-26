@@ -22,10 +22,6 @@ li {
     justify-content: center;
     width: 100vw;
     height: 588px;
-    background-image: url(../images/bk.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: top center;
 }
 
 .head-focus {
@@ -38,7 +34,8 @@ li {
 .head-focus .head-arrow-l,
 .head-arrow-r {
     display: none;
-    position: absolute;
+    /* position: absolute;
+    z-index: 1;
     top: 50%;
     margin-top: -20px;
     width: 66px;
@@ -46,11 +43,11 @@ li {
     background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
     line-height: 40px;
-    color: #fff;
+    color: #fff; */
 }
 
 .head-arrow-r {
-    right: 10px;
+    right: 0;
 }
 
 .head-arrow-l:hover {
@@ -88,62 +85,179 @@ li {
 }
 
 
-.head-focus img {
-    width: 100vW;
-    height: auto;
-    max-width: 100%;
-
-}
-
-.head-focus a {
-    position: absolute;
-    z-index: 1;
-}
-
 .head-focus ul {
     position: absolute;
     top: 0;
     left: 0;
-    width: 600%;
+    width: 800%;
 }
 
 .head-focus ul li {
     float: left;
-    width: auto;
     height: 388px;
+}
+
+.head-focus img {
+    width: 100vw;
+    height: auto;
 }
 
 /* 顶部版心 */
 .header {
     position: absolute;
-    top: 20px;
-    display: -webkit-flex;
     display: flex;
-    justify-content: flex-start;
-    width: 1348px;
+    justify-content: space-between;
+    width: 95vw;
     height: 280px;
 }
 
 /* 顶部logo */
-.logo_head {
+.logo-box {
+    width: 520px;
+    height: 120px;
+}
+
+.head-logo {
     float: left;
+}
+
+.head-logo img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.nav-box {
+    position: relative;
+    width: 840px;
+    height: 120px;
+}
+
+.nav-other {
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: 270px;
+    height: 60px;
+}
+
+.search-box {
+    display: flex;
+    width: 140px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.search-box input {
+    width: 80%;
+    outline: none;
+    border: 0px;
+    font-size: 16px;
+    padding-left: 3px;
+    background: transparent;
+    caret-color: #fff;
+}
+
+.lang {
+    position: absolute;
+    right: 10px;
+    width: 110px;
+    height: 23px;
+
+}
+
+.lang ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang li {
+    width: 20px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 14px;
+
+}
+
+.lang .EN {
+    width: 38px;
+    position: relative;
+}
+
+.EN a {
+    position: absolute;
+    right: 0;
+}
+
+.lang img {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 18px;
+}
+
+.line {
+    position: absolute;
+    right: 46px;
+    top: 2px;
+    width: 2px;
+    height: 19px;
+    background-color: white;
+}
+
+.search-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
     cursor: pointer;
 }
 
-.logo_head img {
-    max-height: 80px;
-    max-width: 600px;
-    width: 100%;
+.search-box img {
+    width: 20px;
     height: auto;
+}
+
+.nav-list {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list li {
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 0 10px;
 }
 
 /* 第一信息栏版心 */
 .notic-box {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     width: 1348px;
     height: 388px;
-
     margin: 0 auto;
+
 }
 
 .focus .arrow-l,
@@ -173,13 +287,13 @@ li {
 }
 
 .focus {
-    position: absolute;
+    position: relative;
     top: 50%;
     margin-top: -112px;
     left: 0;
     width: 388px;
     height: 244px;
-    background-color: pink;
+
     overflow: hidden;
 }
 
@@ -208,20 +322,18 @@ li {
 
 /* 学院动态 */
 .xueyuan-box {
-    position: absolute;
-    left: 481px;
-    width: 416px;
+    position: relative;
+    width: 386px;
     height: 100%;
 }
 
 .xueyuan-box ul {
     position: absolute;
     left: 20px;
-
 }
 
 .xueyuan-box .news-list li a {
-    width: 358px;
+    width: 348px;
 }
 
 .notic-box .xueyuan-box span {
@@ -239,21 +351,18 @@ li {
 }
 
 .tongzhi-box {
-    position: absolute;
-    left: 962px;
-    width: 416px;
+    position: relative;
+    width: 386px;
     height: 100%;
-
 }
 
 .tongzhi-box ul {
     position: absolute;
     left: 20px;
-
 }
 
 .tongzhi-box .news-list li a {
-    width: 358px;
+    width: 348px;
 }
 
 .notic-box .tongzhi-box span {
@@ -280,6 +389,9 @@ li {
 
 /* 图片链接栏版心 */
 .pic-nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 1348px;
     height: 210px;
     margin: 0 auto;
@@ -287,97 +399,21 @@ li {
 
 /* 图片链接 */
 .pic-nav-box a {
-    float: left;
     position: relative;
-    width: 25%;
-    height: 210px;
-}
-
-/*********图片*********/
-.pic-nav-img1 {
-    position: absolute;
-    left: 0;
-    top: 25px;
     width: 260px;
     height: 160px;
 }
 
-.pic-nav-img2 {
-    position: absolute;
-    left: 26px;
-    top: 25px;
-    width: 260px;
-    height: 160px;
+.pic-nav-box img {
+    width: 100%;
+    height: 100%;
 }
-
-.pic-nav-img3 {
-    position: absolute;
-    right: 26px;
-    top: 25px;
-    width: 260px;
-    height: 160px;
-}
-
-.pic-nav-img4 {
-    position: absolute;
-    right: 0;
-    top: 25px;
-    width: 260px;
-    height: 160px;
-}
-
-/*********图片*********/
 
 /* 图片文字 */
-.pic-nav-box a:nth-child(1) span {
+.pic-nav-box a span {
     position: absolute;
-    top: 69px;
+    top: 44px;
     left: 42px;
-    width: 60px;
-    height: 60px;
-    background-color: #cae9fb;
-    color: #21368f;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 30px;
-    padding: 6px;
-    text-align: center;
-}
-
-.pic-nav-box a:nth-child(2) span {
-    position: absolute;
-    top: 69px;
-    left: 58px;
-    width: 60px;
-    height: 60px;
-    background-color: #cae9fb;
-    color: #21368f;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 30px;
-    padding: 6px;
-    text-align: center;
-}
-
-.pic-nav-box a:nth-child(3) span {
-    position: absolute;
-    top: 69px;
-    left: 78px;
-    width: 60px;
-    height: 60px;
-    background-color: #cae9fb;
-    color: #21368f;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 30px;
-    padding: 6px;
-    text-align: center;
-}
-
-.pic-nav-box a:nth-child(4) span {
-    position: absolute;
-    top: 69px;
-    left: 94px;
     width: 60px;
     height: 60px;
     background-color: #cae9fb;
@@ -392,6 +428,8 @@ li {
 
 /* 新闻栏目版心 */
 .news-box {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     width: 1348px;
     height: 388px;
@@ -429,7 +467,7 @@ li {
     position: absolute;
     right: 0;
     bottom: 46px;
-    width: 416px;
+    width: 386px;
     height: 240px;
 
 }
@@ -445,9 +483,9 @@ li {
     position: absolute;
     bottom: 0;
     left: 24px;
-    width: 270px;
+    width: 260px;
     height: 23px;
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
     white-space: nowrap;
     overflow: hidden;
@@ -456,7 +494,7 @@ li {
 
 .news-list li span {
     position: absolute;
-    right: 30px;
+    right: 0;
     bottom: 0;
     font-size: 10px;
     color: #888888;
@@ -465,8 +503,8 @@ li {
 
 .news-list .dot {
     position: absolute;
-    left: 3px;
-    bottom: 4px;
+    left: 0;
+    bottom: 6px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -475,30 +513,25 @@ li {
 
 /* 人才培养 */
 .rencai-box {
-    position: absolute;
-    left: 0;
-    width: 416px;
+    position: relative;
+    width: 386px;
     height: 100%;
-
 }
 
 /* 科研咨询 */
 .keyan-box {
-    position: absolute;
-    left: 481px;
-    width: 416px;
+    position: relative;
+    width: 386px;
     height: 100%;
 
 }
 
 /* 党团工会 */
 .dangtuan-box {
-    position: absolute;
-    right: -30px;
-    top: 0px;
-    width: 416px;
-    height: 100%;
+    position: relative;
 
+    width: 386px;
+    height: 100%;
 }
 
 /* 底部背景 */
@@ -511,23 +544,30 @@ li {
 /* 底部版心 */
 .footer_box {
     position: relative;
-    width: 1248px;
+    width: 1348px;
     height: 218px;
     margin: 0 auto;
 }
 
 /* 友情链接 */
-
 /* 定位下拉内容 */
 .dropdown {
     position: absolute;
-    top: 40px;
-    left: 20px;
+    top: 30px;
+    left: 10px;
 
 }
-
+.tria{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-bottom: 1px solid wheat;
+}
 /* 下拉按钮 */
-.dropbtn {
+.dropbtn { 
     display: inline-block;
     width: 130px;
     height: 30px;
@@ -588,13 +628,13 @@ li {
 .logo_foot {
     position: absolute;
     left: 50%;
-    top: 5px;
-    margin-left: -300px;
+    top: 30px;
+    margin-left: -325px;
 }
 
 .logo_foot img {
     max-height: 80px;
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
     height: auto;
 }
