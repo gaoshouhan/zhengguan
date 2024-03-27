@@ -331,6 +331,13 @@ li {
     position: absolute;
     left: 20px;
 }
+.xueyuan-box img{
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    width: 45px;
+    height: 45px;
+}
 
 .xueyuan-box .news-list li a {
     width: 348px;
@@ -354,6 +361,13 @@ li {
     position: relative;
     width: 386px;
     height: 100%;
+}
+.tongzhi-box img {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 30px;
+    height: 35px;
 }
 
 .tongzhi-box ul {
@@ -517,6 +531,13 @@ li {
     width: 386px;
     height: 100%;
 }
+.rencai-box img {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 35px;
+    height: 32px;
+}
 
 /* 科研咨询 */
 .keyan-box {
@@ -524,6 +545,14 @@ li {
     width: 386px;
     height: 100%;
 
+}
+
+.keyan-box img {
+    position: absolute;
+    left: 0;
+    bottom:2px;
+    width: 35px;
+    height: 35px;
 }
 
 /* 党团工会 */
@@ -534,6 +563,13 @@ li {
     height: 100%;
 }
 
+.dangtuan-box img {
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 35px;
+    height: 35px;
+}
 /* 底部背景 */
 .footer {
     width: 100%;
@@ -559,13 +595,17 @@ li {
 }
 .tria{
     position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 20px;
-    height: 20px;
-    background-color: pink;
-    border-bottom: 1px solid wheat;
+    top: 9px;
+    right: 12px;
+    border-top: 13px solid #fff;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    cursor: pointer;
 }
+
+
+
 /* 下拉按钮 */
 .dropbtn { 
     display: inline-block;
@@ -575,6 +615,7 @@ li {
     color: white;
     padding: 0 40px 0 4px;
     font-size: 16px;
+    line-height: 20px;
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
@@ -676,7 +717,6 @@ li {
     right: 20px;
     width: 90px;
     height: 100px;
-    background-color: pink;
 }
 
 .QR_code span {
