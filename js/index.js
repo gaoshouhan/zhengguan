@@ -57,6 +57,7 @@ window.addEventListener('load', function () {
     var num = 0;
     //点击
     arrow_r.addEventListener('click', function () {
+        var focusWidth = focus.offsetWidth;
         if (num == ul.children.length - 1) {
             ul.style.left = 0;
             num = 0;
@@ -82,21 +83,6 @@ window.addEventListener('load', function () {
     var head_focus = this.document.querySelector('.head-focus');
     var head_focusWidth = head_focus.offsetWidth;
     var head_num = 0;
-    // head_focus.addEventListener('mouseenter', function () {
-    //     head_arrow_l.style.display = 'block';
-    //     head_arrow_r.style.display = 'block';
-    //     clearInterval(head_timer);
-    //     head_timer = null;
-    // });
-
-    // head_focus.addEventListener('mouseleave', function () {
-    //     head_arrow_l.style.display = 'none';
-    //     head_arrow_r.style.display = 'none';
-    //     head_timer = setInterval(function () {
-    //         head_arrow_r.click();
-    //     }, 4000);
-
-    // });
     var head_ul = head_focus.querySelector('ul');
     var head_ol = head_focus.querySelector('.head-circle');
     for (var i = 0; i < head_ul.children.length; i++) {

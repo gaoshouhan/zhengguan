@@ -16,13 +16,19 @@ li {
     list-style: none;
 }
 
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .head-box {
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 588px;
-    min-width: 1348px;
-    min-height: 588px;
 }
 
 .head-focus {
@@ -85,7 +91,7 @@ li {
 
 .head-focus ul li {
     float: left;
-    height: 388px;
+
 }
 
 .head-focus img {
@@ -105,7 +111,7 @@ li {
     display: flex;
     justify-content: center;
     top: 0px;
-    width: 100vw;
+    width: 100%;
     height: 105px;
     z-index: 2;
 }
@@ -128,7 +134,7 @@ li {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 95vw;
+    width: 95%;
     height: 105px;
 }
 
@@ -271,9 +277,9 @@ li {
 .notic-box {
     display: flex;
     justify-content: space-between;
-    width: 80vw;
-    height: 388px;
-    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+    aspect-ratio: 18/5;
 
 }
 
@@ -305,12 +311,8 @@ li {
 
 .focus {
     position: relative;
-    top: 50%;
-    margin-top: -112px;
-    left: 0;
-    width: 388px;
-    height: 244px;
-
+    width: 25vw;
+    aspect-ratio: 16/10;
     overflow: hidden;
 }
 
@@ -328,97 +330,92 @@ li {
 
 .focus ul li {
     float: left;
-    width: 388px;
-    height: 244px;
+    width: 25vw;
+    aspect-ratio: 16/10;
 }
 
 .focus img {
-    width: 388px;
-    height: 244px;
+    width: 25vw;
+    aspect-ratio: 16/10;
 }
 
 /* 学院动态 */
 .xueyuan-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    width: 386px;
+    width: 28%;
+    height: 100%;
+
+}
+
+
+.notic-box .xueyuan-box img {
+    position: absolute;
+    bottom: -5%;
     height: 100%;
 }
 
-.xueyuan-box ul {
-    position: absolute;
-    left: 20px;
-}
-
-.xueyuan-box img {
-    position: absolute;
-    left: -5px;
-    bottom: -5px;
-    width: 45px;
-    height: 45px;
-}
-
 .xueyuan-box .news-list li a {
-    width: 348px;
+    position: absolute;
+    left: 11%;
+    width: 85%;
 }
 
 .notic-box .xueyuan-box span {
     position: absolute;
-    top: 16px;
-    left: -20px;
-    width: 28px;
-    height: 23px;
+    top: 18%;
+    left: 0;
+    width: 6%;
+    height: 50%;
     padding: 1px 0 2px 0;
     text-align: center;
     background-color: #f9e208;
     color: #000000;
-    font-size: 9px;
+    font-size: 0.5vw;
     font-weight: 400;
 }
 
 .tongzhi-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    width: 386px;
+    width: 28%;
     height: 100%;
 }
 
 .tongzhi-box img {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 30px;
-    height: 35px;
-}
-
-.tongzhi-box ul {
-    position: absolute;
-    left: 20px;
+    bottom: -5%;
+    height: 100%;
 }
 
 .tongzhi-box .news-list li a {
-    width: 348px;
+    position: absolute;
+    left: 11%;
+    width: 85%;
 }
 
 .notic-box .tongzhi-box span {
     position: absolute;
-    top: 16px;
-    left: -20px;
-    width: 28px;
-    height: 23px;
+    top: 18%;
+    left: 0;
+    width: 6%;
+    height: 50%;
     padding: 1px 0 2px 0;
     text-align: center;
     background-color: #f9e208;
     color: #000000;
-    font-size: 9px;
+    font-size: 0.5vw;
     font-weight: 400;
 }
 
 /* 图片链接栏 */
 .pic-nav {
-    position: relative;
     width: 100%;
-    height: 80px;
     background-color: #cae9fb;
-    margin: 0 auto;
 }
 
 /* 图片链接栏版心 */
@@ -426,20 +423,17 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
-    height: 80px;
+    width: 80%;
+    aspect-ratio: 16/1;
     margin: 0 auto;
 }
 
 /* 图片链接 */
 .pic-nav-box a {
-    width: 200px;
-    height: auto;
     background-color: #cae9fb;
     color: #21368f;
-    font-size: 24px;
+    font-size: 1.8vw;
     font-weight: 600;
-    text-align: center;
 }
 
 
@@ -448,28 +442,32 @@ li {
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 80vw;
-    height: 388px;
-    margin: 0 auto;
+    width: 90%;
+    aspect-ratio: 16 / 4;
 }
 
 .news-head {
-    position: absolute;
-    top: 38px;
-    left: 2px;
-    width: 386px;
-    height: 50px;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 11 / 1;
     border-bottom: 2px solid #bab9b9;
-    z-index: 1;
+}
+
+.news-head img {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 8%;
+    aspect-ratio: 10/8;
 }
 
 .news-head h2 {
     position: absolute;
-    left: 40px;
+    left: 9%;
     bottom: -2px;
+    font-size: 1.5vw;
     border-bottom: 3px solid #426eb7;
     padding: 2px 0;
-
     color: #426eb7;
 }
 
@@ -477,32 +475,31 @@ li {
     position: absolute;
     right: 0;
     bottom: 1px;
+    font-size: 1vw;
     color: #bab9b9;
 }
 
 .news-list {
-    position: absolute;
-    right: 0;
-    bottom: 46px;
-    width: 386px;
-    height: 240px;
+    width: 100%;
+    aspect-ratio: 16/10;
 
 }
 
 .news-list li {
     position: relative;
-    top: -10px;
     width: 100%;
-    height: 40px;
+    aspect-ratio: 19/2;
+
 }
 
 .news-list li a {
+
     position: absolute;
     bottom: 0;
-    left: 24px;
-    width: 260px;
-    height: 23px;
-    font-size: 16px;
+    left: 6%;
+    width: 70%;
+    aspect-ratio: 20/2;
+    font-size: 1vw;
     color: #000000;
     white-space: nowrap;
     overflow: hidden;
@@ -512,66 +509,52 @@ li {
 .news-list li span {
     position: absolute;
     right: 0;
-    bottom: 0;
-    font-size: 10px;
+    bottom: 20%;
+    font-size: 0.8vw;
     color: #888888;
-
 }
 
 .news-list .dot {
     position: absolute;
     left: 0;
-    bottom: 6px;
-    width: 10px;
-    height: 10px;
+    bottom: 21%;
+    width: 3%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
-    border: 1px solid #416eb6;
+    border: 0.1vw solid #416eb6;
+
 }
 
 /* 人才培养 */
 .rencai-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 386px;
-    height: 100%;
+    width: 28%;
 }
 
-.rencai-box img {
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    width: 35px;
-    height: 32px;
-}
 
 /* 科研咨询 */
 .keyan-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 386px;
-    height: 100%;
-
+    width: 28%;
 }
 
-.keyan-box img {
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    width: 35px;
-    height: 35px;
-}
 
 /* 党团工会 */
 .dangtuan-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 386px;
-    height: 100%;
-}
-
-.dangtuan-box img {
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    width: 35px;
-    height: 35px;
+    width: 28%;
 }
 
 /* 底部图片栏目 */
@@ -579,15 +562,13 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 80vw;
-    height: 260px;
-
-    margin: 0 auto;
+    width: 90%;
+    aspect-ratio: 18 / 3;
 }
 
 .pic-box img {
-    width: 300px;
-    height: 200px;
+    width: 18vw;
+    aspect-ratio: 16 / 10;
 }
 
 /* 底部背景 */
@@ -601,7 +582,7 @@ li {
 /* 底部版心 */
 .footer_box {
     position: relative;
-    width: 80vw;
+    width: 80%;
     height: 218px;
     margin: 0 auto;
 }
