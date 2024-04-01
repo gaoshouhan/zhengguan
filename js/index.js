@@ -1,14 +1,16 @@
 window.addEventListener('scroll', function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop; // 获取滚动距离
+    const scrollTop = document.documentElement.scrollTop; // 获取滚动距离
 
     const headBk = document.querySelector('.head-bk'); // 获取头部元素
 
     // 如果滚动距离大于 0，则改变透明度，触发过渡效果
     if (scrollTop > 0) {
         headBk.style.opacity = '1';
+        
     } else {
         headBk.style.opacity = '0';
     }
+    
 });
 window.addEventListener('load', function () {
     var arrow_l = this.document.querySelector('.arrow-l');
