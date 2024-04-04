@@ -430,10 +430,16 @@ li {
 
 /* 图片链接 */
 .pic-nav-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #cae9fb;
     color: #21368f;
     font-size: 1.8vw;
     font-weight: 600;
+    background-color: #4fa4e4;
+    height: 100%;
+    aspect-ratio: 16/8;
 }
 
 
@@ -559,16 +565,35 @@ li {
 
 /* 底部图片栏目 */
 .pic-box {
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 90%;
     aspect-ratio: 18 / 3;
 }
+.pic-box a{
+    position: relative;
+}
 
 .pic-box img {
     width: 18vw;
     aspect-ratio: 16 / 10;
+}
+
+.pic-box span {
+    position: absolute;
+    top: 3vw;
+    left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cae9fb;
+    color: #21368f;
+    font-size: 1.8vw;
+    font-weight: 600;
+    height: 5.5vw;
+    aspect-ratio: 1/1;
 }
 
 /* 底部背景 */
