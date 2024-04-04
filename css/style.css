@@ -140,16 +140,15 @@ li {
 
 /* 顶部logo */
 .logo-box {
-    width: 460px;
-    height: 105px;
+    width: 560px;
+    height: 205px;
+    margin-top: -20px;
 }
 
 
 .head-logo img {
     width: 100%;
     height: auto;
-    margin-top: 5px;
-    margin-left: -20px;
 }
 
 .nav-box {
@@ -572,7 +571,8 @@ li {
     width: 90%;
     aspect-ratio: 18 / 3;
 }
-.pic-box a{
+
+.pic-box a {
     position: relative;
 }
 
