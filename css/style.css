@@ -28,13 +28,14 @@ li {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 588px;
+    aspect-ratio: 16/6;
+
 }
 
 .head-focus {
     position: relative;
     width: 100vw;
-    height: 588px;
+    aspect-ratio: 16/6;
     overflow: hidden;
 }
 
@@ -59,22 +60,21 @@ li {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 16px;
+    bottom: 0;
     left: 50%;
-    margin-left: -400px;
-    width: 800px;
-    height: 20px;
+    margin-left: -20vw;
+    width: 40vw;
 
 }
 
 .head-circle li {
     float: left;
     cursor: pointer;
-    width: 15px;
-    height: 15px;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     background-color: #fff;
-    margin: 4px 18px;
+    margin: 1vw 1vw;
 }
 
 .head-current-pic {
@@ -110,18 +110,18 @@ li {
     top: 0;
     display: flex;
     justify-content: center;
-    top: 0px;
-    width: 100%;
-    height: 105px;
+    top: 0;
+    width: 100vw;
+    aspect-ratio: 16/1;
     z-index: 2;
+
 }
 
 .head-bk {
-
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 105px;
+    width: 100vw;
+    aspect-ratio: 16/1;
     background-color: #4fa4e4;
     opacity: 0;
     /* 初始透明度为0 */
@@ -134,15 +134,16 @@ li {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    height: 105px;
+    width: 95vw;
+    height: 100%;
+
 }
 
 /* 顶部logo */
 .logo-box {
-    width: 560px;
-    height: 205px;
-    margin-top: -20px;
+    width: 33vw;
+    margin-top: -1vw;
+    margin-left: -2vw;
 }
 
 
@@ -153,8 +154,9 @@ li {
 
 .nav-box {
     position: relative;
-    width: 840px;
-    height: 120px;
+    width: 55vw;
+    height: 100%;
+
 }
 
 .nav-other {
@@ -162,16 +164,18 @@ li {
     align-items: center;
     position: absolute;
     right: 0;
-    width: 270px;
-    height: 60px;
+    width: 17.5vw;
+    height: 4vw;
+
 }
 
 .search-box {
     display: flex;
-    width: 140px;
-    height: 25px;
-    border: 1px solid #fff;
-    border-radius: 4px;
+    width: 9vw;
+    height: 1.5vw;
+    border: 0.1vw solid #fff;
+    border-radius: 0.3vw;
+
 }
 
 .search-box input {
@@ -182,14 +186,14 @@ li {
     padding-left: 3px;
     background: transparent;
     caret-color: #fff;
+
 }
 
 .lang {
     position: absolute;
-    right: 10px;
-    width: 110px;
-    height: 23px;
-
+    right: 0.6vw;
+    width: 7.2vw;
+    height: 1.5vw;
 }
 
 .lang ul {
@@ -198,16 +202,16 @@ li {
 }
 
 .lang li {
-    width: 20px;
-    height: 23px;
+    width: 1.4vw;
+    height: 1.5vw;
     text-align: center;
-    line-height: 23px;
-    font-size: 14px;
+    line-height: 1.5vw;
+    font-size: 1vw;
 
 }
 
 .lang .EN {
-    width: 38px;
+    width: 2.5vw;
     position: relative;
 }
 
@@ -218,17 +222,17 @@ li {
 
 .lang img {
     position: absolute;
-    top: 2px;
+    top: 0.16vw;
     left: 0;
-    width: 18px;
+    width: 1.1vw;
 }
 
 .line {
     position: absolute;
-    right: 46px;
-    top: 2px;
-    width: 2px;
-    height: 19px;
+    right: 3vw;
+    top: 0.1vw;
+    width: 0.1vw;
+    height: 1.3vw;
     background-color: white;
 }
 
@@ -236,8 +240,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25px;
-    height: 25px;
+    height: 100%;
+    aspect-ratio: 1/1;
     border: 0;
     outline: none;
     background-color: transparent;
@@ -245,7 +249,7 @@ li {
 }
 
 .search-box img {
-    width: 20px;
+    width: 1.3vw;
     height: auto;
 }
 
@@ -253,23 +257,28 @@ li {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 3vw;
+
 }
 
 .nav-list ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
 
 .nav-list li {
-    height: 30px;
-    line-height: 30px;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.3vw;
     color: #fff;
     text-align: center;
-    padding: 0 10px;
+    padding: 0 0.7vw;
+
 }
 
 /* 第一信息栏版心 */
@@ -600,15 +609,15 @@ li {
 .footer {
     position: relative;
     width: 100%;
-    height: 218px;
+    height: 14vw;
     background-image: linear-gradient(#4fa4e4, #122d73);
 }
 
 /* 底部版心 */
 .footer_box {
     position: relative;
-    width: 80%;
-    height: 218px;
+    width: 90vw;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -616,19 +625,18 @@ li {
 /* 定位下拉内容 */
 .dropdown {
     position: absolute;
-    top: 30px;
-    left: 10px;
-
+    top: 2vw;
+    left: 1vw;
 }
 
 .tria {
     position: absolute;
-    top: 9px;
-    right: 12px;
-    border-top: 13px solid #fff;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    top: 0.6vw;
+    right: 0.8vw;
+    border-top: 0.8vw solid #fff;
+    border-bottom: 0.6vw solid transparent;
+    border-left: 0.6vw solid transparent;
+    border-right: 0.6vw solid transparent;
     cursor: pointer;
 }
 
@@ -636,16 +644,15 @@ li {
 
 /* 下拉按钮 */
 .dropbtn {
-    display: inline-block;
-    width: 130px;
-    height: 30px;
+    width: 8.5vw;
+    height: 2vw;
     background-color: transparent;
     color: white;
-    padding: 0 40px 0 4px;
-    font-size: 16px;
-    line-height: 20px;
-    border: 1px solid white;
-    border-radius: 4px;
+    padding: 0 2vw 0 0;
+    font-size: 1.05vw;
+    line-height: 1vw;
+    border: 0.1vw solid white;
+    border-radius: 0.2vw;
     cursor: pointer;
 }
 
@@ -653,7 +660,7 @@ li {
 .dropdown-content {
     position: absolute;
     background-color: #4fa4e4;
-    min-width: 128px;
+    width: 8.5vw;
     opacity: 0;
     /* 初始透明度为0 */
     max-height: 0;
@@ -668,9 +675,9 @@ li {
 .dropdown-content a {
     display: block;
     color: #f9f9f9;
-    padding: 10px 0;
+    padding: 0.5vw 0;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.8vw;
 
 }
 
@@ -684,7 +691,7 @@ li {
 .dropdown:hover .dropdown-content {
     opacity: 1;
     /* 鼠标悬停时透明度变为1，显示 */
-    max-height: 1000px;
+    max-height: 100vw;
     /* 鼠标悬停时最大高度变为1000px，逐渐展开 */
 }
 
@@ -697,40 +704,35 @@ li {
 .logo_foot {
     position: absolute;
     left: 50%;
-    top: 30px;
-    margin-left: -325px;
+    top: 2vw;
+    margin-left: -22vw;
 }
 
 .logo_foot img {
-    max-height: 80px;
-    max-width: 650px;
-    width: 100%;
-    height: auto;
+    width: 44vw;
 }
 
 /* 联系信息 */
 .contact_info {
     position: absolute;
-    top: 140px;
+    top: 9vw;
     left: 50%;
-    margin-left: -500px;
-    width: 1000px;
-    font-size: 17px;
+    margin-left: -30vw;
+    width: 60vw;
+    font-size: 1.1vw;
     text-align: center;
-    /* color: #cdcdcd; */
     color: white;
 }
 
 /* 版权信息 */
 .copyright {
     position: absolute;
-    top: 178px;
+    top: 11.5vw;
     left: 50%;
-    margin-left: -500px;
-    width: 1000px;
-    font-size: 12px;
+    margin-left: -30vw;
+    width: 60vw;
+    font-size: 0.8vw;
     text-align: center;
-    /* color: #cdcdcd; */
     color: white;
 }
 
@@ -741,18 +743,19 @@ li {
 /* 二维码 */
 .QR_code {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    width: 90px;
-    height: 100px;
+    top: 1vw;
+    right: 2vw;
+    width: 6vw;
+    height: 7vw;
 }
 
 .QR_code span {
     display: block;
     position: absolute;
-    bottom: 1px;
+    bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 1vw;
     color: white;
+
 }
